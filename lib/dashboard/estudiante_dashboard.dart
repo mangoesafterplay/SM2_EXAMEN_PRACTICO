@@ -7,6 +7,7 @@ import 'package:movuni/screens/mis_reservas_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../dashboard/conductor_dashboard.dart';
+import '../screens/login_history_page.dart';
 
 class EstudianteDashboard extends StatefulWidget {
   const EstudianteDashboard({Key? key}) : super(key: key);
@@ -93,6 +94,13 @@ class _EstudianteDashboardState extends State<EstudianteDashboard> {
     );
   }
 
+  void _verHistorialIniciosSesion(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const LoginHistoryPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,6 +174,14 @@ class _EstudianteDashboardState extends State<EstudianteDashboard> {
                 onTap: () {
                   Navigator.pop(context);
                   // TODO: Implementar edición de perfil
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.security),
+                title: const Text('Historial de Inicios de Sesión'),
+                onTap: () {
+                  Navigator.pop(context);
+                  _verHistorialIniciosSesion(context);
                 },
               ),
               const Divider(),

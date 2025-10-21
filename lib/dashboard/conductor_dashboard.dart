@@ -9,6 +9,7 @@ import 'publicar_viaje.dart';
 import 'historial_viajes.dart';
 import '../screens/mis_viajes_screen.dart';
 import 'estudiante_dashboard.dart';
+import '../screens/login_history_page.dart';
 
 class ConductorDashboard extends StatefulWidget {
   const ConductorDashboard({Key? key}) : super(key: key);
@@ -80,6 +81,13 @@ class _ConductorDashboardState extends State<ConductorDashboard> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (_) => const MisViajesScreen()),
+    );
+  }
+
+  void _verHistorialIniciosSesion(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const LoginHistoryPage()),
     );
   }
 
@@ -260,6 +268,14 @@ class _ConductorDashboardState extends State<ConductorDashboard> {
                 onTap: () {
                   Navigator.pop(context);
                   _verHistorialViajes(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.security),
+                title: const Text('Historial de Inicios de Sesión'),
+                onTap: () {
+                  Navigator.pop(context);
+                  _verHistorialIniciosSesion(context);
                 },
               ),
               ListTile(
