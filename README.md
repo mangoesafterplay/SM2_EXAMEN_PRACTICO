@@ -38,9 +38,6 @@ para saber cuándo y desde qué dispositivo accedí a mi cuenta.
 
 ## Funcionalidades Implementadas
 
-**(Esta sección será completada una vez implementadas las funcionalidades del proyecto.)**
-
-> Ejemplo de estructura esperada:
 > - Registro y autenticación de usuarios  
 > - Visualización del historial de inicios de sesión  
 > - Almacenamiento de registros en base de datos local o remota  
@@ -53,13 +50,14 @@ para saber cuándo y desde qué dispositivo accedí a mi cuenta.
 _A continuación se presentarán capturas de pantalla de la aplicación mostrando las principales funcionalidades implementadas._
 
 ### Captura 1: Pantalla de inicio de sesión
-*(Agregar aquí la imagen)*
+![Pantalla de inicio de sesión](media/login.png)
 
-### Captura 2: Registro exitoso del inicio de sesión
-*(Agregar aquí la imagen)*
+### Captura 2: Panel lateral para ver el historial de inicios de sesión
+![Panel lateral historial](media/historial1.png)
 
 ### Captura 3: Vista del historial de inicios de sesión
-*(Agregar aquí la imagen)*
+![Vista historial](media/historial2.png)
+
 
 ---
 
@@ -67,7 +65,7 @@ _A continuación se presentarán capturas de pantalla de la aplicación mostrand
 
 - **Framework principal:** Flutter  
 - **Lenguaje de programación:** Dart  
-- **Base de datos:** Firebase / LocalStorage (según implementación final)  
+- **Base de datos:** Firebase / LocalStorage
 - **Gestión de dependencias:** pubspec.yaml  
 - **Control de versiones:** Git + GitHub  
 
@@ -76,3 +74,4 @@ _A continuación se presentarán capturas de pantalla de la aplicación mostrand
 ## Autor
 Desarrollado por **Jesús Eduardo Agreda Ramirez**  
 Estudiante de Ingeniería de Sistemas – **Universidad Privada de Tacna**
+
